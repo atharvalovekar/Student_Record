@@ -144,22 +144,22 @@ def calculateAttendance(student):
     attendanceEnglish = 0.0
     attendancePPS = 0.0
 
-    if student.totalHoursMaths > 0:
+    if student["totalHoursMaths"] > 0:
         attendanceMaths = (student["attendedHoursMaths"] / student["totalHoursMaths"]) * 100
 
-    if student.totalHoursPhysics > 0:
+    if student["totalHoursPhysics"] > 0:
         attendancePhysics = (student["attendedHoursPhysics"] / student["totalHoursPhysics"]) * 100
 
-    if student.totalHoursEEE > 0:
+    if student["totalHoursEEE"] > 0:
         attendanceEEE = (student["attendedHoursEEE"] / student["totalHoursEEE"]) * 100
 
-    if student.totalHoursSemiconductor > 0:
+    if student["totalHoursSemiconductor"] > 0:
         attendanceSemiconductor = (student["attendedHoursSemiconductor"] / student["totalHoursSemiconductor"]) * 100
 
-    if student.totalHoursEnglish > 0:
+    if student["totalHoursEnglish"] > 0:
         attendanceEnglish = (student["attendedHoursEnglish"] / student["totalHoursEnglish"]) * 100
 
-    if student.totalHoursPPS > 0:
+    if student["totalHoursPPS"] > 0:
         attendancePPS = (student["attendedHoursPPS"] / student["totalHoursPPS"]) * 100
 
     print("\nAttendance Details for Roll Number {}:".format(student["rollNumber"]))
